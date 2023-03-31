@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 7%;
+  align-items: center;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #0f8b8d;
+}
+
+.navbar .navbar-logo img {
+  width: 15rem;
+}
+
+.navbar .navbar-nav a {
+  color: white;
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+/* Content */
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem 10%;
+}
+
+.content .content-title h1 {
+  color: #0f8b8d;
+}
+
+.content .content-title .card {
+  border: 1px solid #ccc;
+  max-width: 20rem;
+  margin: 1rem 0;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px 1px #ccc;
+}
+
+.content .content-title .card p {
+  font-size: 0.8rem;
+}
+
+.content .map {
+  padding-top: 3rem;
+  width: 50%;
+  height: 20rem;
+}
+
+/* footer */
+.footer {
+  background-color: #143642;
+  display: flex;
+  justify-content: space-evenly;
+  color: #ec9a29;
+  padding: 1rem 7%;
+  border-radius: 15px 15px 0 0;
+}
+
+.footer .footer-icon svg {
+  color: white;
+  margin: 0.4rem;
+}
+
+.footer a {
+  color: #fff;
+}
+.footer .footer-top {
+  margin: 2rem;
+}
+
+.footer .footer-logo img {
+  width: 15rem;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer .footer-products {
+  margin: 2rem;
+}
+
+.footer .footer-store {
+  margin: 2rem;
+}
+
+.footer .footer-contact {
+  margin: 2rem;
+}
+
+/* Media Queries */
+
+@media (max-width: 1000px) {
+}
+@media (max-width: 670px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .navbar-logo img {
+    width: 50%;
+  }
+  .navbar .navbar-nav {
+    margin-top: 2rem;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content .map {
+    width: 100%;
+  }
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer a {
+    margin-left: 1rem;
+  }
+
+  .footer .footer-logo img {
+    width: 50%;
+  }
+
+  .footer .footer-top {
+    display: flex;
+  }
+
+  .footer .footer-top .footer-icon {
+    display: flex;
+  }
+
+  .footer .footer-products {
+    margin: 1rem;
+  }
+
+  .footer .footer-store {
+    margin: 1rem;
+  }
+
+  .footer .footer-contact {
+    margin: 1rem;
+  }
+}
